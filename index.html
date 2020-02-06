@@ -1,9 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html>
-<head>
-<title>Indicators</title>
-</head>
-<body>
+  <head>
+    <title>Indicators</title>
+    <style>  
+      #boxes{
+      content: "";
+      display: table;
+      clear: both;
+      }
+      div{
+      float:left;
+      padding:0 10px;
+      }
+      #tradingview-widget-container{ 
+      background-color: #000000; 
+      } 
+      #tradingview-widget-container{ 
+      background-color:#000000; 
+      } 
+      h2{ 
+      color: #000000; 
+      text-align:center; 
+      } 
+    </style>
+  </head>
+  <body>
+    <main id="boxes">
+	<h2>Hemang's TradingView</h2>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/stocks-india/earnings/" rel="noopener" target="_blank"><span class="blue-text">Click for Earning Calendar</span></a> by TradingView</div>
+  </div>
+<!-- TradingView Widget END -->
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -63,9 +92,138 @@
 
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/stocks-india/earnings/" rel="noopener" target="_blank"><span class="blue-text">Click for Earning Calendar</span></a> by TradingView</div>
-  </div>
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/stocks-india/market-movers-gainers/" rel="noopener" target="_blank"><span class="blue-text">Stock Market</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "12m",
+  "exchange": "NSE",
+  "showChart": true,
+  "locale": "in",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "width": "400",
+  "height": "900",
+  "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+  "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+  "gridLineColor": "rgba(42, 46, 57, 1)",
+  "scaleFontColor": "rgba(120, 123, 134, 1)",
+  "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+  "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+  "symbolActiveColor": "rgba(33, 150, 243, 0.12)"
+}
+  </script>
+</div>
 <!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget">  </div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> <span class="blue-text">and</span> <a href="https://in.tradingview.com/markets/currencies/" rel="noopener" target="_blank"><span class="blue-text">Forex</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "dark",
+  "dateRange": "12m",
+  "showChart": true,
+  "locale": "in",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "width": "400",
+  "height": "900",
+  "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+  "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+  "gridLineColor": "rgba(42, 46, 57, 1)",
+  "scaleFontColor": "rgba(120, 123, 134, 1)",
+  "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+  "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+  "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+  "tabs": [
+    {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "NSE:NIFTY",
+          "d": "NIFTY"
+        },
+        {
+          "s": "NSE:BANKNIFTY",
+          "d": "BANKNIFTY"
+        },
+        {
+          "s": "BSE:MIDCAP",
+          "d": "MIDCAP"
+        },
+        {
+          "s": "INDEX:SENSEX",
+          "d": "SENSEX"
+        },
+        {
+          "s": "NSE:CNXSMALLCAP",
+          "d": "NIFTY SMALL"
+        },
+        {
+          "s": "NSE:CNXPSUBANK",
+          "d": "NIFTY PSU BANK"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX_IDC:GBPINR",
+          "d": "GBPINR"
+        },
+        {
+          "s": "OANDA:USDINR",
+          "d": "USDINR"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_08b5e"></div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/NSE-BANKNIFTY/" rel="noopener" target="_blank"><span class="blue-text">BANKNIFTY Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 1200,
+  "height": 900,
+  "symbol": "NSE:BANKNIFTY",
+  "interval": "D",
+  "timezone": "Asia/Kolkata",
+  "theme": "Dark",
+  "style": "1",
+  "locale": "in",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "watchlist": [
+    "NSE:RECLTD",
+    "NSE:NIFTY",
+    "NSE:BANKNIFTY",
+    "NSE:MOTHERSUMI"
+  ],
+  "hotlist": true,
+  "calendar": true,
+  "container_id": "tradingview_08b5e"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
 
 
  <div style="width: 425px; float:left; height:450px; margin:10px">
